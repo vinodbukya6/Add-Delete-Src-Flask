@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>RTSP-InputOutput</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='agentcust-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body style="background-color:#8FBC8F; opacity: 5;>
+
+		<! Website Title >
+		<div class="container">
+			<h2 class='container-heading'> RTSP-InputOutput</h2>
+	        <div class='description'>
+				<p>Web application takes RTSP URI as input and run few DeepStream functions on video, 
+                                   produce output as RTSP URI.</p>
+			</div>
+		</div>
+
+		<! Results >
+		<div class="results">
+			    <p>*** DeepStream: Launched RTSP Streaming at rtsp://localhost:8554/ds-test ***</p>
+                            <pre> {{ prediction }} </pre>
+		</div>
+		
+
+	</body>
+</html>
